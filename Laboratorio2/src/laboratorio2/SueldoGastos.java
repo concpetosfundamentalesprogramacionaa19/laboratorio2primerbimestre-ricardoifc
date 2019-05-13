@@ -66,13 +66,13 @@ reporteFinal = String.format("Reporte Gastos de Padres de Familia\nNombre de "
 System.out.printf("%sTotales\t\t%.1f\t%.1f \t%.1f\n"
         ,reporteFinal,pasajesTotal,barTotal,salidasTotal);
 //bucle para saber si falta o sobra
-if(total < 1){
+if(total > 1){
     reporte = "alzanza, sobra";
 }else{
-    if(total >= 0){
+    if(total <= 0){
         reporte = "Falta";
     }
 }
-System.out.printf("El padre de familia %s %s le % el dinero semanal, para sus"
-        + " gastos",nombre,apellido,reporte);
+System.out.print("El padre de familia "+nombre+" "+apellido+" le "+reporte+" "
+        + "el dinero semanal, para sus gastos\n");
 }}
