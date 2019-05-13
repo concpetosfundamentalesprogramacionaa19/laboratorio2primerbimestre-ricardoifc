@@ -73,6 +73,8 @@ if(total > 1){
         reporte = "Falta";
     }
 }
-System.out.print("El padre de familia "+nombre+" "+apellido+" le "+reporte+" "
-        + "el dinero semanal, para sus gastos\n");
+System.out.printf("El padre de familia %s %s le %s el dinero semanal, para sus"
+        + " gastos",nombre,apellido,reporte);
+/*System.out.print("El padre de familia "+nombre+" "+apellido+" le "+reporte+" "
+        + "el dinero semanal, para sus gastos\n");*/
 }}
